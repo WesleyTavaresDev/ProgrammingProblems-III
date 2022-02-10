@@ -12,9 +12,20 @@ public class PositiveOrNegativeNumber
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
 
-        if(number >= 0)
+        if(isPositive(number))
             System.out.printf("%s is a positive number", number);
         else
             System.out.printf("%s is a negative number", number);
-    }    
+    }
+    
+    
+    public static boolean isPositive(int number)
+    {
+        if(number >= 0)
+            return true;
+        else
+            return false;
+    }
+
+
 }
