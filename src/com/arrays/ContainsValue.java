@@ -6,10 +6,10 @@ public class ContainsValue
     {
         int[] values = {1,5,6,8};
 
-        System.out.println(Contains(5, values));
+        System.out.println(contains(5, values));
     }
 
-    public static boolean Contains(int value, int[] values)
+    public static boolean contains(int value, int[] values)
     {
         boolean contains = false;
 

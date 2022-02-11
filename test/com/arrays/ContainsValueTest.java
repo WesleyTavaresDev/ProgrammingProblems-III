@@ -11,16 +11,16 @@ public class ContainsValueTest
     public void shouldReturnTrue()
     {
 
-        ContainsValue.Contains(2, values);
-        ContainsValue.Contains(6, values);
-        ContainsValue.Contains(3, values);
+        ContainsValue.contains(2, values);
+        ContainsValue.contains(6, values);
+        ContainsValue.contains(3, values);
     }   
     
     @Test 
     public void shouldReturnFalse()
     {
-        ContainsValue.Contains(7, values);
-        ContainsValue.Contains(8, values);
-        ContainsValue.Contains(Integer.MAX_VALUE, values);
+        ContainsValue.contains(7, values);
+        ContainsValue.contains(8, values);
+        ContainsValue.contains(Integer.MAX_VALUE, values);
     }
 }
