@@ -15,28 +15,16 @@ public class GreatestNumber
 
         addElements(numbers, sc);
 
+        int greatest = numbers.stream()
+        .max(Integer::compare)
+        .orElse(Integer.MAX_VALUE);
 
-        int greatest = 0;
-
-        if(numbers.get(0) > numbers.get(1) && numbers.get(0) > numbers.get(2))
-        {
-            greatest = numbers.get(0);
-        }
-
-        else if(numbers.get(1) > numbers.get(2))
-        {
-            greatest = numbers.get(1);
-        }
-
-        else
-        {
-            greatest = numbers.get(2);
-        }
 
         System.out.println(greatest + " is the greatest number");
     }
 
-    private static void addElements(List<Integer> numbers, Scanner sc) {
+    private static void addElements(List<Integer> numbers, Scanner sc) 
+    {
         numbers.add(sc.nextInt());                
         numbers.add(sc.nextInt());        
         numbers.add(sc.nextInt());
