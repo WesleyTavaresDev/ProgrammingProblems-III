@@ -15,9 +15,7 @@ public class GreatestNumber
 
         addElements(numbers, sc);
 
-        int greatest = getGreatestNumber(numbers);
-
-        System.out.println(greatest + " is the greatest number");
+        System.out.println(getGreatestNumber(numbers) + " is the greatest number");
     }
 
     
