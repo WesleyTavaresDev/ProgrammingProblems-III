@@ -1,5 +1,8 @@
 package test.com.conditional;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.Test;
 
 import src.com.conditional.PositiveOrNegativeNumber;
@@ -10,14 +13,14 @@ public class PositiveOrNegativeNumberTest {
     @Test
     public void shouldReturnTrue()
     {
-        PositiveOrNegativeNumber.isPositive(10);
-        PositiveOrNegativeNumber.isPositive(Integer.MAX_VALUE);
+        assertTrue(PositiveOrNegativeNumber.isPositive(10));
+        assertTrue(PositiveOrNegativeNumber.isPositive(Integer.MAX_VALUE));
     }
 
     @Test
     public void shouldReturnFalse()
     {
-        PositiveOrNegativeNumber.isPositive(-5);
-        PositiveOrNegativeNumber.isPositive(Integer.MIN_VALUE);
+        assertFalse(PositiveOrNegativeNumber.isPositive(-5));
+        assertFalse(PositiveOrNegativeNumber.isPositive(Integer.MIN_VALUE));
     }
 }
