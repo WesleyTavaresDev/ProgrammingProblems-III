@@ -16,6 +16,8 @@ public class PositiveOrNegativeNumber
             System.out.printf("%s is a positive number", number);
         else
             System.out.printf("%s is a negative number", number);
+
+        sc.close();
     }
     
     public static boolean isPositive(int number)
