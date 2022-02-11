@@ -1,7 +1,5 @@
 package src.com.arrays;
 
-
-//1.Write a Java program to sum values of an array.
 public class Sum
 {
     public static void main(String[] args)
