@@ -28,3 +28,16 @@ having a method to calculate and print the average.
         • Create two objects of the Person class, one representing Albert Einstein (born on 3/14/1879) and the other representing Isaac Newton (born 1/4/1643)
         
         • Make a main class that instantiates the objects, initializes them and shows which ones would be the ages of Einstein and Newton if they were alive.
+
+3. Make a program with following characteristics:
+
+        • A class called University that will have a name as an attribute and will have a
+        method to enter your name.
+
+    
+        • Relate the Person class to the University class. Each person can
+        be associated with a University.
+
+        • The Person class, in turn, will have a method that will say its name and in which
+        university works.
+
