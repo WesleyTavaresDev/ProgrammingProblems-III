@@ -13,6 +13,12 @@ public class Person
     private int yearBirth;
     private String name;
 
+
+    public String informName()
+    {
+        return name;
+    }
+
     public int infoAge() 
     {
        return calculateAge();

@@ -7,5 +7,6 @@ public class Main
         Person newton = new Person(25, 01, 2006, "Newton");
         
         System.out.println(newton.infoAge());
+        System.out.println(newton.informName());
     }    
 }
