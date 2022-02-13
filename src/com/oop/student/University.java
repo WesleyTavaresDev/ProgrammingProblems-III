@@ -23,7 +23,7 @@ public class University
     {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Please, choose a university: [Harvard, Cambridge, Usp]");
+        System.out.println("Please, choose a university: [Harvard, Cambridge, USP]");
         
         switch (sc.next()) 
         {
