@@ -2,28 +2,16 @@ package src.com.oop.person;
 
 import java.time.LocalDate;
 import java.util.Calendar;
-/**
- * //TODO -> Create a constructor;
- * //TODO -> Create a main class;
- * //TODO -> Create test cases with Junit5;
- * //TODO -> Commit;
- * TODO -> Start to refact:
- *       //TODO -> decompose conditional (Calculate Age) 
- */
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Person 
 {
-    int day;
-    int month;
-    int yearOfBirth;
-    String name;
-  
-    public Person(int day, int month, int year, String name)
-    {
-        this.day = day;
-        this.month = month;
-        this.yearOfBirth = year;
-        this.name = name;
-    }
+    private int day;
+    private int month;
+    private int yearOfBirth;
+    private String name;
 
     public int calculateAge()
     {
