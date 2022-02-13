@@ -1,4 +1,4 @@
-package com.oop.person;
+package src.com.oop.person;
 
 public class Main
 {

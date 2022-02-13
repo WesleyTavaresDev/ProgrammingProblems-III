@@ -1,4 +1,4 @@
-package com.oop.person;
+package src.com.oop.person;
 
 import java.time.LocalDate;
 import java.util.Calendar;

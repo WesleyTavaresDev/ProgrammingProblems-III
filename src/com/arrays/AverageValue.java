@@ -1,4 +1,4 @@
-package com.arrays;
+package src.com.arrays;
 
 public class AverageValue 
 {

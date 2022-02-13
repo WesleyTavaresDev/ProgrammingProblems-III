@@ -1,4 +1,4 @@
-package com.conditional;
+package src.com.conditional;
 
 import java.util.List;
 import java.util.ArrayList;
