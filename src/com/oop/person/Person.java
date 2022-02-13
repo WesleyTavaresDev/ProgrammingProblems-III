@@ -5,9 +5,10 @@ import java.util.Calendar;
 /**
  * //TODO -> Create a constructor;
  * //TODO -> Create a main class;
- * TODO -> Create test cases with Junit5;
- * TODO -> Commit;
- * TODO -> Start to refact;
+ * //TODO -> Create test cases with Junit5;
+ * //TODO -> Commit;
+ * TODO -> Start to refact:
+ *       TODO -> decompose conditional (Calculate Age) 
  */
 public class Person 
 {
@@ -29,11 +30,21 @@ public class Person
         LocalDate date = LocalDate.now();
         Calendar today = Calendar.getInstance();
 
-        if(today.get(Calendar.DAY_OF_MONTH) >= day && date.getMonthValue() == month || date.getMonthValue() > month)
+        if(birthdayPassed(date, today))
         {
-            return date.getYear() - yearOfBirth;
+            return getAge(date);
         }
         else
-            return date.getYear() - yearOfBirth - 1;
+            return getAge(date) - 1;
+    }
+
+    private int getAge(LocalDate date) 
+    {
+        return date.getYear() - yearOfBirth;
+    }
+
+    private boolean birthdayPassed(LocalDate date, Calendar today) 
+    {
+        return today.get(Calendar.DAY_OF_MONTH) >= day && date.getMonthValue() == month || date.getMonthValue() > month;
     }
 }
