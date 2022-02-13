@@ -30,12 +30,7 @@ public class Person
         LocalDate date = LocalDate.now();
         Calendar today = Calendar.getInstance();
 
-        if(birthdayPassed(date, today))
-        {
-            return getAge(date);
-        }
-        else
-            return getAge(date) - 1;
+        return (birthdayPassed(date, today)) ? getAge(date) : getAge(date) - 1;
     }
 
     private int getAge(LocalDate date) 
