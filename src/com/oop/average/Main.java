@@ -1,4 +1,4 @@
-package src.com.oop.average;
+package com.oop.average;
 import java.util.Scanner;
 
 public class Main 

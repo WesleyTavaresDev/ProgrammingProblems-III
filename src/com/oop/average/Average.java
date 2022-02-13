@@ -1,4 +1,4 @@
-package src.com.oop.average;
+package com.oop.average;
 
 public class Average 
 {

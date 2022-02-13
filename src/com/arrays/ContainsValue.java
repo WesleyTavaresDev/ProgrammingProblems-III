@@ -1,4 +1,4 @@
-package src.com.arrays;
+package com.arrays;
 
 public class ContainsValue 
 {
