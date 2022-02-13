@@ -1,14 +1,12 @@
 package src.com.oop.student;
 
-import java.util.Scanner;
-
 /**
  * TODO -> create a field called name;
  * TODO -> Create a method to define the university;
  */
 public class University 
 {
-    enum universities {Harvard, Cambridge, USP};
+    enum universities {Harvard, Cambridge, USP, Princeton};
 
     universities university;
 
@@ -19,19 +17,18 @@ public class University
         return name;
     }
 
-    public String defineUniversity()
+    public String defineUniversity(String universityName)
     {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Please, choose a university: [Harvard, Cambridge, USP]");
         
-        switch (sc.next()) 
+        switch (universityName) 
         {
-            case "Harvard" -> university = universities.Harvard;
+            case  "Harvard"  -> university  = universities.Harvard;
              
-            case "Cambridge" -> university = universities.Cambridge;
+            case "Cambridge" -> university  = universities.Cambridge;
 
-            case "USP" -> university = universities.USP;
+            case    "USP"    -> university  = universities.USP;
+
+            case "Princeton" -> university  = universities.Princeton;
 
             default -> throw new Error("Invalid name");
         }
