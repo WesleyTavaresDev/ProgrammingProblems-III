@@ -11,12 +11,12 @@ public class PersonTest
     public void shouldReturnAge()
     {
         Person beatriz = new Person(03, 07, 1981, "Beatriz");
-        assertEquals(40, beatriz.calculateAge());
+        assertEquals(40, beatriz.infoAge());
 
         Person wesley = new Person(25, 01, 2006, "Wesley");
-        assertEquals(16, wesley.calculateAge());
+        assertEquals(16, wesley.infoAge());
 
         Person guilherme = new Person(22, 12, 1969, "Guilherme");
-        assertEquals(52, guilherme.calculateAge());
+        assertEquals(52, guilherme.infoAge());
     }
 }

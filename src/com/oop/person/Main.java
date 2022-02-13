@@ -6,6 +6,6 @@ public class Main
     {
         Person newton = new Person(25, 01, 2006, "Newton");
         
-        System.out.println(newton.calculateAge());
+        System.out.println(newton.infoAge());
     }    
 }

@@ -8,12 +8,17 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class Person 
 {
-    private int day;
-    private int month;
-    private int yearOfBirth;
+    private int dayBirth;
+    private int monthBirth;
+    private int yearBirth;
     private String name;
 
-    public int calculateAge()
+    public int infoAge() 
+    {
+       return calculateAge();
+    }
+
+    private int calculateAge()
     {
         LocalDate date = LocalDate.now();
         Calendar today = Calendar.getInstance();
@@ -23,11 +28,12 @@ public class Person
 
     private int getAge(LocalDate date) 
     {
-        return date.getYear() - yearOfBirth;
+        return date.getYear() - yearBirth;
     }
 
     private boolean birthdayPassed(LocalDate date, Calendar today) 
     {
-        return today.get(Calendar.DAY_OF_MONTH) >= day && date.getMonthValue() == month || date.getMonthValue() > month;
+        return today.get(Calendar.DAY_OF_MONTH) >= dayBirth && date.getMonthValue() == monthBirth 
+                        || date.getMonthValue() > monthBirth;
     }
 }
