@@ -8,7 +8,7 @@ import java.util.Calendar;
  * //TODO -> Create test cases with Junit5;
  * //TODO -> Commit;
  * TODO -> Start to refact:
- *       TODO -> decompose conditional (Calculate Age) 
+ *       //TODO -> decompose conditional (Calculate Age) 
  */
 public class Person 
 {
