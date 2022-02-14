@@ -24,6 +24,6 @@
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/home/WesleyDev/Downloads/lombok.jar"
+        "/home/wesley/Downloads/lombok.jar"
     ]
 }

@@ -3,9 +3,6 @@ package src.com.oop.person;
 import java.time.LocalDate;
 import java.util.Calendar;
 
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
 public class Person 
 {
     private int dayBirth;
@@ -13,6 +10,12 @@ public class Person
     private int yearBirth;
     private String name;
 
+    public Person(int dayBirth, int monthBirth, int yearBirth, String name) {
+        this.dayBirth = dayBirth;
+        this.monthBirth = monthBirth;
+        this.yearBirth = yearBirth;
+        this.name = name;
+    }
 
     public String informName()
     {

@@ -1,16 +1,15 @@
 package src.com.oop.student;
 
-import java.util.Scanner;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@AllArgsConstructor
-@Getter
 public class Student 
 {
     private String name;
     private String university;
+
+
+    public Student(String name, String university) {
+        this.name = name;
+        this.university = university;
+    }
 
     public void whoIAm()
     {
