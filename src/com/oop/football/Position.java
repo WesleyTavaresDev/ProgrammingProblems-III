@@ -1,6 +1,6 @@
 package src.com.oop.football;
 
-public class Player
+public class Position 
 {
     
 }
