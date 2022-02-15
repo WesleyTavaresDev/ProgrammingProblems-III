@@ -19,7 +19,6 @@ public class Player
     private double height;
     private int weight;
 
-
     public static void main(String[] args)
     {
         Player botafogo = new Player("Wesley", positions.Defense , 25, 01, 2006, "Brazilian", 1.72D, 60);

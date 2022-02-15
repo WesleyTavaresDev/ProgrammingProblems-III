@@ -13,5 +13,10 @@ public class Position
         }
     };
 
+    public int getTimeForRetire(int age, positions position)
+    {
+        return position.value - age;
+    }
+
 
 }
