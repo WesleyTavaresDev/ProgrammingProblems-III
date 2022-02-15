@@ -22,7 +22,7 @@ public class Player
 
     public static void main(String[] args)
     {
-        Player botafogo = new Player("Wesley", positions.Defense ,25, 06, 2006, "Brazilian", 1.72D, 60);
+        Player botafogo = new Player("Wesley", positions.Defense , 25, 01, 2006, "Brazilian", 1.72D, 60);
         botafogo.playerInfo();
         
     }
@@ -36,5 +36,7 @@ public class Player
         System.out.println("Nationality: " + nationality);
         System.out.println("Height:"  + height);
         System.out.println("Weight: " + weight);
+
+        System.out.println("Age: " + AgeCalculator.calculateAge(dayBirth, monthBirth, yearBirth));
     }
 }
