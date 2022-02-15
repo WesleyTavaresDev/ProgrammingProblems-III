@@ -11,12 +11,12 @@ public class Position
         {
             this.value = value;
         }
+        
+        public int getTimeForRetire(int age, positions position)
+        {
+            return position.value - age;
+        }
     };
-
-    public int getTimeForRetire(int age, positions position)
-    {
-        return position.value - age;
-    }
 
 
 }
