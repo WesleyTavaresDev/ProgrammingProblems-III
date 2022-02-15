@@ -19,13 +19,6 @@ public class Player
     private double height;
     private int weight;
 
-    public static void main(String[] args)
-    {
-        Player botafogo = new Player("Wesley", positions.Defense , 25, 01, 2006, "Brazilian", 1.72D, 60);
-        botafogo.playerInfo();
-        
-    }
-
     public void playerInfo()
     {
         System.out.println("Name: " + name);
@@ -36,6 +29,12 @@ public class Player
         System.out.println("Height:"  + height);
         System.out.println("Weight: " + weight);
 
-        System.out.println("Age: " + AgeCalculator.calculateAge(dayBirth, monthBirth, yearBirth));
+        System.out.println("Age: " + getAge());
+        System.out.println("Time for retire: " + position.getTimeForRetire(getAge(), position));
+    }
+
+    int getAge()
+    {
+        return AgeCalculator.calculateAge(dayBirth, monthBirth, yearBirth);
     }
 }
