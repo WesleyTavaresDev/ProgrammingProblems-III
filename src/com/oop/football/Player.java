@@ -30,7 +30,7 @@ public class Player
         System.out.println("Weight: " + weight);
 
         System.out.println("Age: " + getAge());
-        System.out.println("Time for retire: " + position.getTimeForRetire(getAge(), position));
+        System.out.println("Time for retire: " + position.getTimeForRetire(getAge(), position) + "years");
     }
 
     int getAge()
