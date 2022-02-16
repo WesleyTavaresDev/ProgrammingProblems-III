@@ -1,9 +1,5 @@
 package src.com.oop.student;
 
-/**
- * TODO -> create a field called name;
- * TODO -> Create a method to define the university;
- */
 public class University 
 {
     enum universities {Harvard, Cambridge, USP, Princeton};

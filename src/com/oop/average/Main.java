@@ -20,7 +20,6 @@ public class Main
             
         }catch(NumberFormatException e){
             throw new NumberFormatException("Invalid number");
-        }
-        
+        }    
     }
 }
