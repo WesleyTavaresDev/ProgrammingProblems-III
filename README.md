@@ -59,3 +59,13 @@ having a method to calculate and print the average.
 
                 • A method to show how much time is left for the player to retire. For this, consider that players in the defensive position retire on average at 40, midfield players at 38 and attackers at 35.
 
+5. *Write a program by creating an 'Employee' class having the following methods and print the final salary:* 
+
+                • getInfo() which takes the salary, number of hours of work per day of employee as
+                parameter
+
+                • addSal() which adds $10 to salary of the employee if it is less than $500.
+                
+                • addWork() which adds $5 to salary of employee if the number of hours of work per
+                day is more than 6 hours.
+
