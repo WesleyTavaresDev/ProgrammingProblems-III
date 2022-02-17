@@ -10,6 +10,16 @@ public class Employee
         this.salary = salary;
         this.hoursOfWork = hoursOfWorkPerDay;
     }
+    
+    public double getSalary()
+    {
+        return salary;
+    }
+
+    public int getHoursOfWork()
+    {
+        return hoursOfWork;
+    }
 
     public void addSal()
     {
