@@ -10,4 +10,10 @@ public class Employee
         this.salary = salary;
         this.hoursOfWork = hoursOfWork;
     }
+
+    public void addSal()
+    {
+        if(salary < 500)
+            salary += 10;
+    }
 }
