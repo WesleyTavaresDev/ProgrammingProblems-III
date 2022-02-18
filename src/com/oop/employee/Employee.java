@@ -1,8 +1,10 @@
 package src.com.oop.employee;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
+@NoArgsConstructor
 public class Employee 
 {
     private double salary = 0.0d;
