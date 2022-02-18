@@ -29,8 +29,7 @@ public class Employee
 
     public void addWork()
     {
-        if(isHoursOfWorkHigh())
-            increaseSal(5);
+        increaseSal(isHoursOfWorkHigh() ? 5 : 0);
     }
 
     private boolean isHoursOfWorkHigh() 
