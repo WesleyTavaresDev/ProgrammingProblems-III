@@ -1,24 +1,17 @@
 package src.com.oop.employee;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 public class Employee 
 {
     private double salary = 0.0d;
     private int hoursOfWork = 0;     
-    
-    public double getSalary()
-    {
-        return salary;
-    }
 
-    public int getHoursOfWork()
-    {
-        return hoursOfWork;
-    }
 
     public void addSal()
     {
