@@ -26,15 +26,9 @@ public class Employee
        increaseSal( isSalaryLow() ? 10 : 0);
     }
 
-
     public void addWork()
     {
         increaseSal(isHoursOfWorkHigh() ? 5 : 0);
-    }
-
-    private boolean isHoursOfWorkHigh() 
-    {
-        return hoursOfWork > 6;
     }
 
     private void increaseSal(int salaryIncrease) 
@@ -45,5 +39,10 @@ public class Employee
     private boolean isSalaryLow() 
     {
         return salary < 500;
+    }
+
+    private boolean isHoursOfWorkHigh() 
+    {
+        return hoursOfWork > 6;
     }
 }
