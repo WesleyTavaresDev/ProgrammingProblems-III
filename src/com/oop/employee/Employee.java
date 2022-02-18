@@ -1,15 +1,12 @@
 package src.com.oop.employee;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Employee 
 {
     private double salary = 0.0d;
     private int hoursOfWork = 0;     
-
-    public Employee(double salary, int hoursOfWorkPerDay)
-    {
-        this.salary = salary;
-        this.hoursOfWork = hoursOfWorkPerDay;
-    }
     
     public double getSalary()
     {
