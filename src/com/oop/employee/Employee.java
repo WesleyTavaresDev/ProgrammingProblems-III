@@ -23,13 +23,29 @@ public class Employee
 
     public void addSal()
     {
-        if(salary < 500)
-            salary += 10;
+        if(isSalaryLow())
+            increaseSal(10);
     }
+
 
     public void addWork()
     {
-        if(hoursOfWork > 6)
-            salary += 5;
+        if(isHoursOfWorkHigh())
+            increaseSal(5);
+    }
+
+    private boolean isHoursOfWorkHigh() 
+    {
+        return hoursOfWork > 6;
+    }
+
+    private void increaseSal(int salaryIncrease) 
+    {
+        salary += salaryIncrease;
+    }
+
+    private boolean isSalaryLow() 
+    {
+        return salary < 500;
     }
 }
