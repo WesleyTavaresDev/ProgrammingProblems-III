@@ -23,8 +23,7 @@ public class Employee
 
     public void addSal()
     {
-        if(isSalaryLow())
-            increaseSal(10);
+       increaseSal( isSalaryLow() ? 10 : 0);
     }
 
 
