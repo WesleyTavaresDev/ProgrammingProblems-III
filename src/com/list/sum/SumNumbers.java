@@ -16,7 +16,7 @@ public class SumNumbers
        System.out.println("Sum with for-loop -> " + forLoopSum( Arrays.asList(1, 2, 3, 4, 5, 6)));
     }  
 
-    private static int forLoopSum(List<Integer> numbers)
+    public static int forLoopSum(List<Integer> numbers)
     {
         int sum = 0;
         for(Integer n : numbers)
