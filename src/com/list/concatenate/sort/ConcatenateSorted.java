@@ -13,6 +13,7 @@ public class ConcatenateSorted <T>
     public static <T> List<T> concatAndSort(List<T> base, List<T> other)
     {
         List<T> concatenatedList = Stream.concat(base.stream(), other.stream()).sorted().toList();
+        
         return concatenatedList;
     }
 
