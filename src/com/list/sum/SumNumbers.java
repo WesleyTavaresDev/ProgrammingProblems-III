@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * //TODO ->  for-loop 
- * TODO ->  while-loop and
+ * //TODO ->  while-loop and
  * TODO ->  recursion.
  */
 
@@ -16,6 +16,9 @@ public class SumNumbers
         System.out.println("Sum with for-loop -> " + forLoopSum( Arrays.asList(1, 2, 3, 4, 5, 6)));
         
         System.out.println("Sum with while-loop -> " + whileLoopSum(Arrays.asList(1, 2, 3, 4, 5)));
+        
+        List<Integer> numbers = Arrays.asList(2,2,3,3);
+        System.out.println("Sum with recursion -> " + recursiveSum(numbers, numbers.size() - 1));
     }  
 
     public static int forLoopSum(List<Integer> numbers)
@@ -37,6 +40,14 @@ public class SumNumbers
         }
 
         return sum;
+    }
+
+    public static int recursiveSum(List<Integer> numbers, int number)
+    {
+        if(number == 0)
+            return numbers.get(number);
+        else
+            return numbers.get(number) + recursiveSum(numbers, number - 1);
     }
 
 }
