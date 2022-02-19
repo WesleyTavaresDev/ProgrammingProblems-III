@@ -17,4 +17,12 @@ public class SumNumbersTest
         assertEquals(10, SumNumbers.forLoopSum(Arrays.asList(1, 2, 2, 5)));
         assertEquals(10, SumNumbers.forLoopSum(Arrays.asList(3, 5, 2)));  
     }
+
+    @Test
+    public void shouldReturnOneHundredWithWhileLoop()
+    {
+        assertEquals(100, SumNumbers.whileLoopSum(Arrays.asList(50, 50)));
+        assertEquals(100, SumNumbers.whileLoopSum(Arrays.asList(20, 20, 20, 20, 20)));
+        assertEquals(100, SumNumbers.whileLoopSum(Arrays.asList(35, 65)));
+    }
 }
