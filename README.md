@@ -75,6 +75,11 @@ having a method to calculate and print the average.
                 • for-loop; 
                 • while-loop and
                 • recursion.
+                
 2. Write a function that concatenates two lists.
 
                 • [a,b,c], [1,2,3] → [a,b,c,1,2,3]
+
+3. Write a function that merges two sorted lists into a new sorted list. 
+        
+                •[1,4,6],[2,3,5] → [1,2,3,4,5,6].
