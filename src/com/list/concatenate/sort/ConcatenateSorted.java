@@ -1,6 +1,5 @@
 package src.com.list.concatenate.sort;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -14,7 +13,7 @@ public class ConcatenateSorted <T>
     public static <T> List<T> concatAndSort(List<T> base, List<T> other)
     {
         List<T> concatenatedList = Stream.concat(base.stream(), other.stream()).sorted().toList();
-        
+
         return concatenatedList;
     }
 
