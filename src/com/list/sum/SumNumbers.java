@@ -3,12 +3,6 @@ package src.com.list.sum;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * //TODO ->  for-loop 
- * //TODO ->  while-loop and
- * TODO ->  recursion.
- */
-
 public class SumNumbers
 {
     public static void main(String[] args) 

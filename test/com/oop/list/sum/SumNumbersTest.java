@@ -25,4 +25,12 @@ public class SumNumbersTest
         assertEquals(100, SumNumbers.whileLoopSum(Arrays.asList(20, 20, 20, 20, 20)));
         assertEquals(100, SumNumbers.whileLoopSum(Arrays.asList(35, 65)));
     }
+
+    @Test
+    public void shouldReturnTwentyWithRecursion()
+    {
+        assertEquals(20, SumNumbers.recursiveSum(Arrays.asList(4, 6, 5, 5), 4 - 1));
+        assertEquals(20, SumNumbers.recursiveSum(Arrays.asList(4, 6, 0, 10), 4 - 1));
+        assertEquals(20, SumNumbers.recursiveSum(Arrays.asList(-1, 20, 1, 0), 4 - 1));
+    }
 }
