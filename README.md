@@ -13,9 +13,11 @@
         • 3. Write a Java program to test if an array contains a specific value. 
 
 # Object-Oriented Programming (oop)
+
 1. Print the average of three numbers entered by user by creating a class named 'Average'
 having a method to calculate and print the average.
-2. Create the Person class with the following characteristics:
+
+2. *Create the Person class with the following characteristics*:
 
         • attributes: age and day, month and year of birth, person's name
 
@@ -68,6 +70,8 @@ having a method to calculate and print the average.
                 
                 • addWork() which adds $5 to salary of employee if the number of hours of work per
                 day is more than 6 hours.
+                
+6. *Write a C++ program to create a Vehicle class with max_speed and mileage instance attributes.*
 
 # Java list   
 1. Write three functions that compute the sum of the numbers in a list using: 
